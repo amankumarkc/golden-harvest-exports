@@ -1,73 +1,314 @@
-# Welcome to your Lovable project
 
-## Project info
+# Golden Harvest Exports 🥜
 
-**URL**: https://lovable.dev/projects/0da6f17a-535c-48c4-b4d7-07f7fe454b20
+A premium e-commerce platform for dry fruits and nuts export business, built with modern web technologies and optimized for global trade.
 
-## How can I edit this code?
+## 🌟 Features
 
-There are several ways of editing your application.
+### 🛍️ E-Commerce Functionality
+- **Product Catalog**: Beautiful product listings with advanced filtering and search
+- **Shopping Cart**: Full cart management with quantity controls
+- **Product Details**: Rich product pages with image galleries and specifications
+- **User Authentication**: Multi-provider OAuth login (Google, Apple, Microsoft, Facebook, Instagram)
+- **User Profiles**: Complete dashboard with order history and wishlist
 
-**Use Lovable**
+### 🎨 Premium Design
+- **Modern UI/UX**: Clean, professional design with golden theme
+- **Responsive Design**: Optimized for all devices (mobile, tablet, desktop)
+- **Interactive Elements**: Smooth animations and hover effects
+- **Accessibility**: WCAG compliant design principles
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/0da6f17a-535c-48c4-b4d7-07f7fe454b20) and start prompting.
+### 🌍 Export-Ready Features
+- **Global Shipping**: International shipping calculations
+- **Multi-Currency**: Support for different currencies
+- **Export Documentation**: Built-in export compliance tools
+- **Wholesale Pricing**: Tiered pricing for bulk orders
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Tech Stack
 
-**Use your preferred IDE**
+### Frontend
+- **React 18** - Modern React with hooks and concurrent features
+- **TypeScript** - Type-safe development
+- **Tailwind CSS** - Utility-first CSS framework
+- **Vite** - Fast build tool and development server
+- **React Router** - Client-side routing
+- **Shadcn/UI** - High-quality component library
+- **Lucide React** - Beautiful icon library
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### State Management & Data Fetching
+- **TanStack Query** - Powerful data synchronization
+- **React Hook Form** - Performant form handling
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Styling & Animations
+- **Tailwind CSS** - Responsive utility classes
+- **CSS Grid & Flexbox** - Modern layout systems
+- **Custom animations** - Smooth transitions and micro-interactions
 
-Follow these steps:
+## 📁 Project Structure
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+golden-harvest-exports/
+├── public/                 # Static assets
+├── src/
+│   ├── components/         # Reusable components
+│   │   ├── home/          # Homepage components
+│   │   ├── layout/        # Layout components (Header, Footer)
+│   │   └── ui/            # UI component library
+│   ├── pages/             # Page components
+│   │   ├── AuthPage.tsx   # Authentication
+│   │   ├── CartPage.tsx   # Shopping cart
+│   │   ├── ProductsPage.tsx # Product listing
+│   │   ├── ProductDetailPage.tsx # Product details
+│   │   └── ProfilePage.tsx # User profile
+│   ├── lib/               # Utility functions
+│   ├── hooks/             # Custom React hooks
+│   └── App.tsx            # Main application
+├── tailwind.config.ts     # Tailwind configuration
+└── package.json           # Dependencies
 ```
 
-**Edit a file directly in GitHub**
+## 🛠️ Installation & Setup
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Prerequisites
+- Node.js (v18 or higher)
+- npm, yarn, or pnpm
 
-**Use GitHub Codespaces**
+### Installation Steps
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/golden-harvest-exports.git
+   cd golden-harvest-exports
+   ```
 
-## What technologies are used for this project?
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
-This project is built with:
+3. **Start development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+4. **Open in browser**
+   Navigate to `http://localhost:5173`
 
-## How can I deploy this project?
+## 🎯 Development Guide
 
-Simply open [Lovable](https://lovable.dev/projects/0da6f17a-535c-48c4-b4d7-07f7fe454b20) and click on Share -> Publish.
+### Key Components
 
-## Can I connect a custom domain to my Lovable project?
+#### Header Component (`src/components/layout/Header.tsx`)
+- Responsive navigation with mobile menu
+- Search functionality
+- Cart and user icons
+- Multi-level navigation structure
 
-Yes, you can!
+#### Product Components
+- **FeaturedProducts**: Homepage product showcase
+- **ProductCard**: Reusable product display component
+- **ProductFilters**: Advanced filtering system
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+#### Authentication (`src/pages/AuthPage.tsx`)
+- Multi-provider OAuth integration
+- Form validation
+- Responsive design
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Styling Guidelines
+
+#### Color Palette
+- Primary: Golden/Amber (#F59E0B)
+- Secondary: Orange (#EA580C)
+- Neutral: Grays (#F9FAFB to #111827)
+- Success: Green (#10B981)
+- Error: Red (#EF4444)
+
+#### Typography
+- Headlines: Bold, clear hierarchy
+- Body text: Readable, accessible
+- Responsive font sizes
+
+#### Layout Principles
+- Mobile-first responsive design
+- Consistent spacing using Tailwind's spacing scale
+- Grid-based layouts for product listings
+- Card-based design for content organization
+
+## 🔧 Configuration
+
+### Tailwind CSS
+The project uses a custom Tailwind configuration with:
+- Extended color palette for the golden theme
+- Custom component classes
+- Animation utilities
+- Responsive breakpoints
+
+### TypeScript
+- Strict type checking enabled
+- Custom type definitions for components
+- API response types
+
+## 📱 Responsive Design
+
+The application is fully responsive across:
+- **Mobile**: 320px - 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: 1024px+
+
+Key responsive features:
+- Collapsible navigation on mobile
+- Responsive grid layouts
+- Touch-optimized interactions
+- Optimized images for different screen densities
+
+## 🔐 Authentication System
+
+### Supported Providers
+- Google OAuth 2.0
+- Apple Sign-in
+- Microsoft Account
+- Facebook Login
+- Instagram Login
+- Email/Password
+
+### Features
+- Secure JWT token handling
+- Password strength validation
+- Remember me functionality
+- Password reset flow
+
+## 🛒 E-Commerce Features
+
+### Product Management
+- Category-based organization
+- Advanced search and filtering
+- Product variants (size, packaging)
+- Inventory tracking
+- Wishlist functionality
+
+### Shopping Cart
+- Persistent cart state
+- Quantity management
+- Price calculations
+- Promo code support
+- Multiple shipping options
+
+### User Experience
+- Guest checkout option
+- Save for later functionality
+- Recently viewed products
+- Personalized recommendations
+
+## 🌐 Future Enhancements
+
+### Backend Integration (Planned)
+- **FastAPI** backend with Python
+- **PostgreSQL** database via Supabase
+- **Redis** for caching
+- **Stripe/RazorPay** payment integration
+
+### Advanced Features (Roadmap)
+- **AI Recommendations**: Machine learning-powered product suggestions
+- **Real-time Chat**: Customer support integration
+- **Multi-language**: i18n support for global markets
+- **PWA Features**: Offline functionality and push notifications
+- **Analytics**: Comprehensive user behavior tracking
+
+### Export-Specific Features
+- **Documentation Generator**: Automated export paperwork
+- **Compliance Checker**: International trade regulation validation
+- **Logistics Integration**: Real-time shipping tracking
+- **Currency Converter**: Live exchange rates
+- **Bulk Order Management**: Wholesale order processing
+
+## 🔒 Security Considerations
+
+- **Input Validation**: Client and server-side validation
+- **XSS Protection**: Sanitized user inputs
+- **CSRF Protection**: Token-based request validation
+- **Secure Headers**: Security-focused HTTP headers
+- **Data Encryption**: Sensitive data encryption
+
+## 🚀 Deployment
+
+### Build for Production
+```bash
+npm run build
+```
+
+### Preview Production Build
+```bash
+npm run preview
+```
+
+### Deployment Platforms
+- **Vercel** (Recommended)
+- **Netlify**
+- **AWS S3 + CloudFront**
+- **Digital Ocean**
+
+## 📊 Performance Optimization
+
+- **Code Splitting**: Route-based code splitting
+- **Image Optimization**: Responsive images with proper formats
+- **Bundle Analysis**: Webpack bundle analyzer
+- **Caching Strategy**: Intelligent caching for static assets
+- **SEO Optimization**: Meta tags, structured data
+
+## 🧪 Testing (Planned)
+
+- **Unit Tests**: Jest + React Testing Library
+- **Integration Tests**: API endpoint testing
+- **E2E Tests**: Cypress for user journey testing
+- **Performance Tests**: Lighthouse CI integration
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Code Style
+- Follow ESLint configuration
+- Use Prettier for code formatting
+- Write meaningful commit messages
+- Add JSDoc comments for complex functions
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👥 Team
+
+- **Frontend Development**: React/TypeScript specialists
+- **UI/UX Design**: Modern e-commerce design principles
+- **Backend Architecture**: Scalable API design (planned)
+- **DevOps**: CI/CD pipeline optimization (planned)
+
+## 📞 Support
+
+For support and questions:
+- **Email**: support@goldenharvestexports.com
+- **Documentation**: [Project Wiki](wiki-link)
+- **Issues**: [GitHub Issues](issues-link)
+
+## 🙏 Acknowledgments
+
+- **Shadcn/UI** for the excellent component library
+- **Tailwind CSS** for the utility-first approach
+- **Lucide** for the beautiful icon set
+- **React Community** for continuous inspiration
+
+---
+
+**Golden Harvest Exports** - Premium Dry Fruits for Global Markets 🌍✨
