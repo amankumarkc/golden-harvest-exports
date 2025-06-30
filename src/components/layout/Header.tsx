@@ -93,6 +93,12 @@ const Header = () => {
           <Link to="/export" className="text-gray-700 hover:text-amber-600 font-medium">
             Export Services
           </Link>
+          <Link to="/request-sample" className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 font-medium">
+            Request Sample
+          </Link>
+          <Link to="/get-quote" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 font-medium">
+            Get Quote
+          </Link>
         </nav>
 
         {/* Mobile menu */}
@@ -108,6 +114,21 @@ const Header = () => {
               </Link>
               <Link to="/products?category=dried-fruits" className="text-gray-700 hover:text-amber-600 font-medium">
                 Dried Fruits
+              </Link>
+              <Link to="/wholesale" className="text-gray-700 hover:text-amber-600 font-medium">
+                Wholesale
+              </Link>
+              <Link to="/export" className="text-gray-700 hover:text-amber-600 font-medium">
+                Export Services
+              </Link>
+              <Link to="/request-sample" className="bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700 font-medium text-center">
+                Request Sample
+              </Link>
+              <Link to="/get-quote" className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 font-medium text-center">
+                Get Quote
+              </Link>
+              <Link to="/contact" className="text-gray-700 hover:text-amber-600 font-medium">
+                Contact
               </Link>
               <Link to="/auth" className="text-amber-600 font-medium">
                 Sign In

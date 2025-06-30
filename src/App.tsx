@@ -10,6 +10,11 @@ import ProductsPage from "./pages/ProductsPage";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import CartPage from "./pages/CartPage";
 import ProfilePage from "./pages/ProfilePage";
+import RequestSamplePage from "./pages/RequestSamplePage";
+import GetQuotePage from "./pages/GetQuotePage";
+import ContactPage from "./pages/ContactPage";
+import WholesalePage from "./pages/WholesalePage";
+import ExportPage from "./pages/ExportPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +32,11 @@ const App = () => (
           <Route path="/products/:id" element={<ProductDetailPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/profile" element={<ProfilePage />} />
+          <Route path="/request-sample" element={<RequestSamplePage />} />
+          <Route path="/get-quote" element={<GetQuotePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/wholesale" element={<WholesalePage />} />
+          <Route path="/export" element={<ExportPage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
