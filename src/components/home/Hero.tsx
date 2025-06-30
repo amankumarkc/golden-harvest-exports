@@ -6,7 +6,14 @@ import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <section className="relative bg-gradient-to-br from-amber-50 via-amber-100 to-orange-100 py-20 overflow-hidden">
-      <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23f59e0b\" fill-opacity=\"0.05\"%3E%3Ccircle cx=\"10\" cy=\"10\" r=\"2\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-50"></div>
+      <div className="absolute inset-0 opacity-50">
+        <div className="absolute inset-0 bg-amber-200/10" 
+             style={{
+               backgroundImage: `radial-gradient(circle at 1px 1px, rgba(245,158,11,0.15) 1px, transparent 0)`,
+               backgroundSize: '20px 20px'
+             }}>
+        </div>
+      </div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
